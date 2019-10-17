@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="66a7123c-e05a-4b66-aef8-1e6a06745224">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="FirstName" class="java.lang.String"/>
+	<field name="MiddleName" class="java.lang.String"/>
+	<field name="EmployeeCode" class="java.lang.String"/>
+	<field name="AssetCode" class="java.lang.String"/>
+	<field name="CategoryName" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="79" backcolor="#9999FF" uuid="f07962ee-40b1-46ce-bf65-37ba3ccc29df"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Assigned Asset List]]></text>
+			</staticText>
+			<image>
+				<reportElement x="19" y="15" width="57" height="50" uuid="afbe514f-0d80-4262-93fb-12beb7f21856"/>
+				<imageExpression><![CDATA["C:\\Users\\ewawuye\\Documents\\NetBeansProjects\\Isms\\Isms\\src\\main\\resources\\csc_logo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="44" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="18" width="100" height="20" uuid="ef49016a-bbdc-42ef-860f-e0a28d1b9f46"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[First name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="18" width="100" height="20" uuid="6e1ea6b0-c155-4cd8-bd60-146a28743315"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Middle Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="223" y="18" width="100" height="20" uuid="ce684939-db0d-4f47-b286-5bbeba65e491"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Emloyee code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="337" y="18" width="100" height="20" uuid="65fa13d7-8859-46ee-b1e2-9b40813fa01e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Asset Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="457" y="18" width="100" height="20" uuid="39d47bd0-504a-4dba-ab04-878ae089c0e6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Category]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="52" splitType="Stretch">
+			<textField>
+				<reportElement x="2" y="16" width="100" height="20" uuid="2eb94bab-1ddc-4ad7-b7fc-3972d84f99dc"/>
+				<textFieldExpression><![CDATA[$F{FirstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="113" y="16" width="100" height="20" uuid="c42280ef-983f-499d-bdc4-a4ecb83f87a4"/>
+				<textFieldExpression><![CDATA[$F{MiddleName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="223" y="16" width="100" height="20" uuid="19296907-3f3d-4c6a-8b70-0fe63685a582"/>
+				<textFieldExpression><![CDATA[$F{EmployeeCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="16" width="100" height="20" uuid="f0e66d5e-3009-4054-938b-fc2d5c2d8c41"/>
+				<textFieldExpression><![CDATA[$F{AssetCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="457" y="16" width="100" height="20" uuid="d03fda5f-6598-4003-85cb-40bb1294177b"/>
+				<textFieldExpression><![CDATA[$F{CategoryName}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="4" y="36" width="553" height="3" uuid="cab45eb3-c417-417a-a6de-8a14b12312cf"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
